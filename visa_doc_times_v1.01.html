@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>visa_doc_times</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><font face="黑体" size=4 style="line-height:32px" color="#ff0000">
+<center><strong>注意:</strong> 以下时间仅供参考</center>
+</font></p>
+<p><font face="微软雅黑" size=4 style="line-height:32px"></p>
+<h2>民事类:</h2>
+<ul>
+<li>不加急都是5个工作日</li>
+<li>加急都是2个工作日</li>
+</ul>
+<h2>商业类</h2>
+<ul>
+<li>加急2个工作日</li>
+</ul>
+<h2>外交部和使馆认证加急时间：</h2>
+<h3>A</h3>
+<ul>
+<li>阿尔巴尼亚   13个工作日</li>
+<li>阿尔及利亚   43个工作日</li>
+<li>阿富汗       18个工作日</li>
+<li>阿根廷       10个工作日</li>
+<li>阿联酋       10个工作日</li>
+<li>阿曼         11个工作日</li>
+<li>阿塞拜疆     13个工作日</li>
+<li>爱尔兰       8个工作日</li>
+<li>埃及         10个工作日</li>
+<li>埃塞俄比亚   13个工作日</li>
+<li>爱沙尼亚     18个工作日</li>
+<li>安哥拉       10个工作日</li>
+<li>澳大利亚     8个工作日</li>
+<li>奥地利       10个工作日</li>
+</ul>
+<h3>B</h3>
+<ul>
+<li>巴哈马       8个工作日</li>
+<li>巴勒斯坦     8个工作日</li>
+<li>巴林         13个工作日</li>
+<li>巴拿马       23个工作日</li>
+<li>巴西         8个工作日</li>
+<li>白俄罗斯     10个工作日</li>
+<li>保加利亚     13个工作日</li>
+<li>比利时       10个工作日</li>
+<li>波兰         18个工作日</li>
+<li>玻利维亚     18个工作日</li>
+</ul>
+<h3>D</h3>
+<p>*丹麦          10个工作日
+*德国          10个工作日
+*多米尼加      18个工作日</p>
+<h3>E</h3>
+<ul>
+<li>厄瓜多尔      13个工作日</li>
+<li>厄立特里亚    13个工作日
+俄罗斯        13个工作日</li>
+</ul>
+<h3>F</h3>
+<ul>
+<li>法国          18个工作日</li>
+<li>菲律宾        13个工作日</li>
+<li>芬兰          8个工作日</li>
+</ul>
+<h3>G</h3>
+<ul>
+<li>刚果        18个工作日</li>
+<li>哥伦比亚    23个工作日</li>
+<li>哥斯达黎加  10个工作日</li>
+<li>古巴        15个工作日</li>
+</ul>
+<h3>H</h3>
+<ul>
+<li>哈萨克斯坦  33个工作日</li>
+<li>海地        13个工作日</li>
+<li>韩国        8个工作日</li>
+<li>荷兰        10个工作日</li>
+</ul>
+<h3>J</h3>
+<ul>
+<li>吉尔吉斯斯坦 8个工作日</li>
+<li>捷克         13个工作日</li>
+<li>津巴布韦     13个工作日</li>
+<li>柬埔寨       10个工作日</li>
+</ul>
+<h3>K</h3>
+<ul>
+<li>卡塔尔       18个工作日</li>
+<li>克罗地亚     18个工作日</li>
+<li>科特迪瓦     13个工作日</li>
+<li>科威特       10个工作日</li>
+<li>肯尼亚       18个工作日</li>
+</ul>
+<h3>L</h3>
+<ul>
+<li>拉脱维亚     33个工作日</li>
+<li>老挝         8个工作日</li>
+<li>黎巴嫩      10个工作日</li>
+<li>利比亚      13个工作日</li>
+<li>立陶宛      8个工作日</li>
+<li>卢森堡      13个工作日</li>
+<li>卢旺达      18个工作日</li>
+<li>罗马尼亚    13个工作日</li>
+</ul>
+<h3>M</h3>
+<ul>
+<li>马达加斯加  8个工作日</li>
+<li>马耳他      13个工作日</li>
+<li>马来西亚    10个工作日</li>
+<li>毛里求斯    18个工作日</li>
+<li>毛里塔尼亚  10个工作日</li>
+<li>美国        13个工作日</li>
+<li>蒙古        13个工作日</li>
+<li>孟加拉      13个工作日</li>
+<li>缅甸        33个工作日</li>
+<li>摩尔多瓦    13个工作日</li>
+<li>莫桑比克    18个工作日</li>
+<li>墨西哥      13个工作日</li>
+</ul>
+<h3>N</h3>
+<ul>
+<li>南非        13个工作日</li>
+<li>尼泊尔      10个工作日</li>
+<li>尼日利亚    23个工作日</li>
+<li>挪威        10个工作日</li>
+</ul>
+<h3>P</h3>
+<ul>
+<li>葡萄牙      13个工作日</li>
+</ul>
+<h3>R</h3>
+<ul>
+<li>瑞典        10个工作日</li>
+<li>瑞士        10个工作日</li>
+</ul>
+<h3>S</h3>
+<ul>
+<li>塞尔维亚    8个工作日</li>
+<li>塞拉利昂    10个工作日</li>
+<li>塞浦路斯    13个工作日</li>
+<li>沙特        13个工作日</li>
+<li>斯里兰卡    10个工作日</li>
+<li>斯洛伐克    10个工作日</li>
+<li>斯洛文尼亚  10个工作日</li>
+<li>苏丹        10个工作日</li>
+<li>苏里南      8个工作日</li>
+</ul>
+<h3>T</h3>
+<ul>
+<li>塔吉克斯坦  10个工作日</li>
+<li>泰国        10个工作日</li>
+<li>土耳其      13个工作日</li>
+<li>土库曼斯坦  13个工作日</li>
+<li>突尼斯      10个工作日</li>
+</ul>
+<h3>W</h3>
+<ul>
+<li>委内瑞拉    13个工作日</li>
+<li>乌克兰      23个工作日</li>
+<li>乌拉圭      13个工作日</li>
+<li>乌兹别克斯坦 13个工作日</li>
+</ul>
+<h3>X</h3>
+<ul>
+<li>西班牙      8个工作日</li>
+<li>希腊        13个工作日</li>
+<li>新加坡      10个工作日</li>
+<li>新西兰      10个工作日</li>
+<li>叙利亚      10个工作日</li>
+</ul>
+<h3>Y</h3>
+<ul>
+<li>牙买加      8个工作日</li>
+<li>也门        10个工作日</li>
+<li>伊拉克      23个工作日</li>
+<li>伊朗        18个工作日</li>
+<li>意大利      13个工作日</li>
+<li>以色列      10个工作日</li>
+<li>印度        18个工作日</li>
+<li>印度尼西亚  10个工作日</li>
+<li>约旦        10个工作日</li>
+<li>越南        13个工作日</li>
+</ul>
+<h3>Z</h3>
+<ul>
+<li>智利        15个工作日
+</font></li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
